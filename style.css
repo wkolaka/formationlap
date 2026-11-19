@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #15151e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+header {
+  background-color: #101017;
+  border-bottom: 3px solid #e10600;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.logo {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.logo-f {
+  height: 36px;
+  width: auto;
+  margin-right: 4px;
+  display: block;
+}
+.logo span {
+  color: #e10600;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #e10600;
+}
+.hero {
+  background: linear-gradient(135deg, #1f1f2b 0%, #15151e 100%);
+  border-bottom: 3px solid #e10600;
+  padding: 60px 20px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+.hero p {
+  color: #b8b8c7;
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+.btn {
+  display: inline-block;
+  background-color: #e10600;
+  color: #ffffff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #b80500;
+}
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+section {
+  margin-bottom: 48px;
+}
+h3 {
+  font-size: 24px;
+  border-left: 4px solid #e10600;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.card {
+  background-color: #1f1f2b;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #2e2e3e;
+}
+.card h4 {
+  color: #e10600;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.countdown-box {
+  background: linear-gradient(90deg, #1f1f2b 0%, #2a1820 100%);
+  border: 1px solid #e10600;
+  border-radius: 10px;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.countdown-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #b8b8c7;
+  letter-spacing: 1px;
+}
+.countdown-race {
+  font-size: 22px;
+  font-weight: bold;
+}
+.countdown-timer {
+  font-size: 24px;
+  font-weight: 900;
+  color: #e10600;
+  font-variant-numeric: tabular-nums;
+}
+.standings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+.tab-btn {
+  background-color: #1f1f2b;
+  color: #b8b8c7;
+  border: 1px solid #2e2e3e;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tab-btn.active {
+  background-color: #e10600;
+  color: #ffffff;
+  border-color: #e10600;
+}
+.sync-status {
+  font-size: 13px;
+  color: #888899;
+}
+.hidden {
+  display: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #1f1f2b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+th, td {
+  padding: 13px 16px;
+  text-align: left;
+  border-bottom: 1px solid #2e2e3e;
+}
+th {
+  background-color: #282838;
+  color: #e10600;
+}
+.pos-cell {
+  font-weight: 900;
+  width: 60px;
+}
+.pos-1 { color: #ffd700; }
+.pos-2 { color: #c0c0c0; }
+.pos-3 { color: #cd7f32; }
+.pts-cell {
+  font-weight: bold;
+}
+.team-stripe {
+  display: inline-block;
+  width: 4px;
+  height: 15px;
+  border-radius: 2px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.toggle-more {
+  margin-top: 12px;
+  background-color: #282838;
+  color: #ffffff;
+  border: 1px solid #3a3a4e;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.toggle-more:hover {
+  border-color: #e10600;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.badge-next { background-color: #e10600; color: #ffffff; }
+.badge-live { background-color: #00b862; color: #ffffff; }
+.badge-upcoming { background-color: #2e2e3e; color: #d0d0de; }
+.badge-done { background-color: #181822; color: #6c6c80; }
+tr.row-done td { color: #6c6c80; }
+footer {
+  text-align: center;
+  padding: 24px;
+  background-color: #0e0e14;
+  color: #888899;
+  font-size: 14px;
+}
+/* Кнопка с тремя точками в шапке */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.menu-dots-btn {
+  background: transparent;
+  border: 1px solid #2e2e3e;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.menu-dots-btn:hover {
+  border-color: #e10600;
+  background-color: #1f1f2b;
+}
+
+/* Выдвижное боковое меню и затемнение */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease;
+  z-index: 998;
+}
+.sidebar-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -270px;
+  width: 260px;
+  height: 100%;
+  background-color: #101017;
+  border-right: 3px solid #e10600;
+  padding: 20px;
+  transition: left 0.25s ease;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar.open {
+  left: 0;
+}
+.sidebar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #2e2e3e;
+}
+.sidebar-title {
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.sidebar-close {
+  background: none;
+  border: none;
+  color: #b8b8c7;
+  font-size: 26px;
+  cursor: pointer;
+}
+.sidebar-close:hover {
+  color: #e10600;
+}
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sidebar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.sidebar-links a:hover,
+.sidebar-links a.active-link {
+  background-color: #1f1f2b;
+  color: #e10600;
+}

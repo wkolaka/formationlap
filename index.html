@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FormationLap — Мир Формулы-1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <span class="sidebar-title">НАВИГАЦИЯ</span>
+      <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Закрыть меню">&times;</button>
+    </div>
+    <nav class="sidebar-links">
+      <a href="index.html" class="active-link">Основная страница</a>
+      <a href="standings.html">Таблица лидеров</a>
+    </nav>
+  </aside>
+
+  <header>
+    <div class="header-left">
+      <button class="menu-dots-btn" onclick="toggleSidebar()" aria-label="Открыть меню">&#8942;</button>
+
+      <a href="index.html" class="logo" aria-label="FormationLap">
+        <svg class="logo-f" viewBox="0 0 85 50" xmlns="http://w3.org">
+          <polygon points="18,6 56,6 53,16 28,16 26,22 47,22 44,31 23,31 18,45 6,45" fill="#ffffff"/>
+          <polygon points="59,6 82,6 79,13 57,13" fill="#e10600"/>
+          <polygon points="55,16 76,16 73,22 53,22" fill="#e10600"/>
+          <polygon points="50,25 69,25 66,31 48,31" fill="#e10600"/>
+          <polygon points="45,34 61,34 58,40 43,40" fill="#e10600"/>
+        </svg>
+        ORMATION<span>LAP</span>
+      </a>
+    </div>
+
+    <nav>
+      <a href="#calendar">Календарь</a>
+      <a href="#teams">Команды</a>
+      <a href="#news">О проекте</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>Королевские гонки на максимальной скорости</h2>
+    <p>Актуальное расписание Гран-при, турнирные таблицы чемпионата и главные события Формулы-1.</p>
+    <a href="standings.html" class="btn">Таблица лидеров</a>
+  </div>
+
+  <main>
+    <section id="calendar">
+      <h3>Ближайшие Гран-при 2026</h3>
+
+      <div class="countdown-box">
+        <div>
+          <div class="countdown-title" id="next-race-label">Следующий старт</div>
+          <div class="countdown-race" id="next-race-name">Загрузка расписания...</div>
+        </div>
+        <div class="countdown-timer" id="next-race-timer">--д --ч --м --с</div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Этап</th>
+            <th>Трасса</th>
+            <th>По времени трассы</th>
+            <th id="user-tz-header">Ваше время</th>
+            <th>Статус</th>
+          </tr>
+        </thead>
+        <tbody id="schedule-body"></tbody>
+      </table>
+    </section>
+
+    <section id="teams">
+      <h3>Топ-команды</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Mercedes-AMG F1</h4>
+          <p>Чемпионы Кубка конструкторов 2026 года. В составе выступают Кими Антонелли и Джордж Расселл.</p>
+        </div>
+        <div class="card">
+          <h4>Scuderia Ferrari</h4>
+          <p>Легендарная итальянская команда из Маранелло с звёздным дуэтом Льюиса Хэмилтона и Шарля Леклера.</p>
+        </div>
+        <div class="card">
+          <h4>Red Bull Racing</h4>
+          <p>Австрийский коллектив из Милтон-Кинса, за который выступают Макс Ферстаппен и Изак Аджар.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <h3>О проекте</h3>
+      <p>FormationLap — фан-портал о Формуле-1. Расписание и таблицы очков обновляются автоматически в реальном времени.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 FormationLap — Фан-сайт Формулы-1</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
