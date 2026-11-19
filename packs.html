@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Паки — Formula Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleSidebar()"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <span class="sidebar-title">FORMULA <span style="color:#e10600;">LIFE</span></span>
+      <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Закрыть меню">&times;</button>
+    </div>
+    <nav class="sidebar-links">
+      <a href="index.html">Главная</a>
+      <a href="standings.html">Зачёты</a>
+      <a href="cards.html">Карточки</a>
+      <a href="packs.html" class="active-link">Паки</a>
+      <a href="checkin.html">Отметка на сайте</a>
+      <a href="history.html">История гонок</a>
+    </nav>
+  </aside>
+
+  <header>
+    <div class="header-left">
+      <button class="menu-dots-btn" onclick="toggleSidebar()" aria-label="Открыть меню">&#8942;</button>
+      <a href="index.html" class="logo">
+        <svg class="logo-f" viewBox="0 0 110 70" aria-hidden="true">
+          <path d="M22,12 L106,12 L101,25 L34,25 L30,34 L88,34 L83,46 L25,46 L16,66 L2,66 Z" fill="#e10600"/>
+        </svg>ormula<span>Life</span>
+      </a>
+    </div>
+    <div class="header-right">
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="standings.html">Зачёты</a>
+        <a href="cards.html">Карточки</a>
+        <a href="packs.html">Паки</a>
+        <a href="checkin.html">Отметка на сайте</a>
+        <a href="history.html">История гонок</a>
+      </nav>
+      <div id="auth-header-box"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="packs-section">
+      <h3>Паки</h3>
+      <p style="color: #b8b8c7; margin-bottom: 20px;">Открывайте наборы за поинты и собирайте редкие карточки сезона. Из одного пака выпадает от <strong>1 до 3</strong> случайных карт.</p>
+      <div id="packs-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 Formula Life. Фан-проект о Формуле-1.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

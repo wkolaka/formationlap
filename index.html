@@ -15,8 +15,13 @@
       <button class="sidebar-close" onclick="toggleSidebar()" aria-label="Закрыть меню">&times;</button>
     </div>
     <nav class="sidebar-links">
-      <a href="index.html" class="active-link">Основная страница</a>
-      <a href="standings.html">Таблица лидеров</a>
+            <a href="index.html">Главная</a>
+      <a href="standings.html">Зачёты</a>
+      <a href="cards.html">Карточки</a>
+      <a href="packs.html">Паки</a>
+      <a href="checkin.html">Отметка на сайте</a>
+      <a href="history.html">История гонок</a>
+
     </nav>
   </aside>
 
@@ -36,16 +41,19 @@
       </a>
     </div>
 
-    <nav>
-      <a href="#calendar">Календарь</a>
-      <a href="#teams">Команды</a>
-      <a href="#news">О проекте</a>
-    </nav>
+    <div class="header-right">
+      <nav>
+        <a href="#calendar">Календарь</a>
+        <a href="cards.html">Карточки</a>
+        <a href="checkin.html">Отметки</a>
+      </nav>
+      <div id="auth-header-box"></div>
+    </div>
   </header>
 
   <div class="hero">
     <h2>Королевские гонки на максимальной скорости</h2>
-    <p>Актуальное расписание Гран-при, турнирные таблицы чемпионата и главные события Формулы-1.</p>
+    <p>Актуальное расписание Гран-при, турнирные таблицы чемпионата и коллекция карточек Формулы-1.</p>
     <a href="standings.html" class="btn">Таблица лидеров</a>
   </div>
 
@@ -91,11 +99,6 @@
           <p>Австрийский коллектив из Милтон-Кинса, за который выступают Макс Ферстаппен и Изак Аджар.</p>
         </div>
       </div>
-    </section>
-
-    <section id="news">
-      <h3>О проекте</h3>
-      <p>FormationLap — фан-портал о Формуле-1. Расписание и таблицы очков обновляются автоматически в реальном времени.</p>
     </section>
   </main>
 
